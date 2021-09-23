@@ -1,0 +1,222 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ccc-volume
+  labels:
+    type: local
+spec:
+  storageClassName: ccc
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/ccc"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: connect-volume
+  labels:
+    type: local
+spec:
+  storageClassName: connect
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/connect"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: elastic-volume
+  labels:
+    type: local
+spec:
+  storageClassName: elastic
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/elastic"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: kafka-volume-1
+  labels:
+    type: local
+spec:
+  storageClassName: kafka
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/k1"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: kafka-volume-2
+  labels:
+    type: local
+spec:
+  storageClassName: kafka
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/k2"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: kafka-volume-3
+  labels:
+    type: local
+spec:
+  storageClassName: kafka
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/k3"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ksqldb
+  labels:
+    type: local
+spec:
+  storageClassName: ksqldb
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/ksqldb"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: schema
+  labels:
+    type: local
+spec:
+  storageClassName: schema
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/schema"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zookeeper-volume-1
+  labels:
+    type: local
+spec:
+  storageClassName: zookeeper
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/zk1"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zookeeper-volume-2
+  labels:
+    type: local
+spec:
+  storageClassName: zookeeper
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/zk2"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zookeeper-volume-3
+  labels:
+    type: local
+spec:
+  storageClassName: zookeeper
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/zk3"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zookeeper-volume-4
+  labels:
+    type: local
+spec:
+  storageClassName: zookeeper
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/zk4"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zookeeper-volume-5
+  labels:
+    type: local
+spec:
+  storageClassName: zookeeper
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/zk5"
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: zookeeper-volume-6
+  labels:
+    type: local
+spec:
+  storageClassName: zookeeper
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/Users/cstow/Workspace/confluent-operator/data/zk6"
